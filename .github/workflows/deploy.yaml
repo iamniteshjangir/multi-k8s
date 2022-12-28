@@ -49,9 +49,9 @@ jobs:
               docker push niteshjangir/multi-server-k8s-gh:latest
               docker push niteshjangir/multi-worker-k8s-gh:latest
 
-              docker push niteshjangir/multi-client-k8s-gh:{{ env.SHA }}
-              docker push niteshjangir/multi-server-k8s-gh:{{ env.SHA }}
-              docker push niteshjangir/multi-worker-k8s-gh:{{ env.SHA }}
+              docker push niteshjangir/multi-client-k8s-gh:${{ env.SHA }}
+              docker push niteshjangir/multi-server-k8s-gh:${{ env.SHA }}
+              docker push niteshjangir/multi-worker-k8s-gh:${{ env.SHA }}
       
       - name: Apply
         run: |-
